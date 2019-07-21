@@ -1,19 +1,10 @@
 package jkh;
 
-import com.google.auth.oauth2.GoogleCredentials;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.FirebaseOptions;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class App extends Application {
 	
@@ -25,6 +16,7 @@ public class App extends Application {
 		
 		stage.setScene(scene);
 		
+		stage.setMaximized(true);
 		stage.setTitle("ЖКХ");
 		stage.show();
 	}
