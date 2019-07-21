@@ -1,0 +1,30 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.7'
+}
+
+group 'ru.lazybones'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.12
+mainClassName = 'jkh.App'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+    
+    
+    implementation 'com.google.firebase:firebase-admin:6.9.0'
+}
+
+javafx {
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.web']
+}
+
+run {
+    environment("GOOGLE_APPLICATION_CREDENTIALS", "/home/mikhalkovnik/dev/untitled-demo/jkhhakkaton-firebase-adminsdk-d8u9n-d06213f8d0.json")
+}
